@@ -2,6 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Watch Live Demo
+Open [Website](https://bridge-test-react.web.app/) to view it in your browser.
+
 ## Available Scripts
 
 In the project directory, you can run:
