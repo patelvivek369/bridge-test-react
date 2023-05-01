@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useContext } from "react";
+import './styles/App.scss';
+
+import { FirstSlide } from "./components/FirstSlide";
+import { SecondSlide } from "./components/SecondSlide";
+import { ThirdSlide } from "./components/ThirdSlide";
+import { ForthSlide } from "./components/ForthSlide";
+import { GlobalDataContext } from "./context/AppContextProvider";
 
 function App() {
+  const sitedata = useContext(GlobalDataContext);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg">
+      <h1>CALCULATING YOUR TOTAL COSTS { sitedata.slideIndex === 3 ? '- YOUR RESULTS': ''}</h1>
+      <div className="main">
+        <FirstSlide />
+        <SecondSlide />
+        <ThirdSlide />
+        <ForthSlide />
+      </div>
     </div>
   );
 }

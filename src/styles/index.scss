@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap");
+@import "./variable.scss";
+
+// Global styles for tags
+html, body, *, ul, li, a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  user-select: none;
+  word-wrap: break-word;
+}
+html {
+  font-size: $font-size;
+}
+body {
+  font-size: 16px;
+  color: $primary-color;
+  overflow: hidden;
+  @media (max-width:800px) {
+    overflow: auto;
+  }
+}
+
+
+input, button, select {
+  border: 1px solid transparent;
+  padding: 0.3rem;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  padding: 1.8rem 2.4rem;
+}

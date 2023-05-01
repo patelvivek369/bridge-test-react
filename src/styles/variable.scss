@@ -1,0 +1,14 @@
+// Variables
+$font-size: 10px;
+$primary-color: #5F259F;
+$secondary-color: #DB2F20;
+$border-radius: 8px;
+
+// Mixins
+@mixin border-radius($value: $border-radius) {
+  border-radius: $value;
+}
+
+@mixin border-box {
+    box-sizing: border-box;
+}
